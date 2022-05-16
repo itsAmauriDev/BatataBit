@@ -31,7 +31,7 @@
         </header>
         <main>
             <section class="exchange-section">
-                <div class="exchange-section__bitcoin-img"></div>
+                <div class="exchange-section__img"></div>
                 <div class="exchange-section__description">
                     <h2>Visibilizamos todas las tasas de cambio.</h2>
                     <p>
@@ -39,28 +39,121 @@
                         cambio y las monedas más importantes del mundo.
                     </p>
                 </div>
-                <section class="exchange-section__table-contaiter">
-                    <div>
-                        <p>Monedas</p>
-                        <table>
-                            <tr>
-                                <td>Bitcoin</td>
-                                <td>$ 1.96 <span></span></td>
-                            </tr>
-                            <tr>
-                                <td>Ethereum</td>
-                                <td>$ 0.07 <span></span></td>
-                            </tr>
-                            <tr>
-                                <td>Ripple</td>
-                                <td>$ 2.15 <span></span></td>
-                            </tr>
-                            <tr>
-                                <td>Stellar</td>
-                                <td>$ 4.96 <span></span></td>
-                            </tr>
-                        </table>
-                        <p><b>Actualizado:</b> 19 julio 23:45</p>
+                <section class="exchange-section__tables-container">
+                    <div class="exchange-table" id="currenciesTable">
+                        <p
+                            class="exchange-table__title exchange-table__title--currencies"
+                        >
+                            Monedas
+                        </p>
+                        <div class="exchange-table__table">
+                            <table>
+                                <tr>
+                                    <td>Bitcoin</td>
+                                    <td class="table--right">
+                                        $ 1.96
+                                        <span
+                                            class="trending-indicator trending-down"
+                                        >
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ethereum</td>
+                                    <td class="table--right">
+                                        $ 0.07
+                                        <span
+                                            class="trending-indicator trending-up"
+                                        ></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ripple</td>
+                                    <td class="table--right">
+                                        $ 2.15
+                                        <span
+                                            class="trending-indicator trending-down"
+                                        ></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Stellar</td>
+                                    <td class="table--right">
+                                        $ 4.96
+                                        <span
+                                            class="trending-indicator trending-down"
+                                        ></span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <a
+                                class="change-table change-table--next"
+                                href="#commissionsTable"
+                            ></a>
+                        </div>
+                        <p
+                            class="exchange-table__date exchange-table__date--currencies"
+                        >
+                            <b>Actualizado:</b> 19 julio 23:45
+                        </p>
+                    </div>
+
+                    <div class="exchange-table" id="commissionsTable">
+                        <p
+                            class="exchange-table__title exchange-table__title--commissions"
+                        >
+                            Comisiones
+                        </p>
+                        <div class="exchange-table__table">
+                            <table>
+                                <tr>
+                                    <td>Bitcoin</td>
+                                    <td class="table--right">
+                                        $ 1.96
+                                        <span
+                                            class="trending-indicator trending-down"
+                                        >
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ethereum</td>
+                                    <td class="table--right">
+                                        $ 0.07
+                                        <span
+                                            class="trending-indicator trending-up"
+                                        ></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ripple</td>
+                                    <td class="table--right">
+                                        $ 2.15
+                                        <span
+                                            class="trending-indicator trending-down"
+                                        ></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Stellar</td>
+                                    <td class="table--right">
+                                        $ 4.96
+                                        <span
+                                            class="trending-indicator trending-down"
+                                        ></span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <a
+                                class="change-table change-table--previous"
+                                href="#currenciesTable"
+                            ></a>
+                        </div>
+                        <p
+                            class="exchange-table__date exchange-table__date--commissions"
+                        >
+                            <b>Actualizado:</b> 19 julio 23:45
+                        </p>
                     </div>
                 </section>
             </section>
