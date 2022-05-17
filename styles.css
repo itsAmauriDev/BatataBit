@@ -358,3 +358,149 @@ main {
     text-align: center;
     color: var(--just-white);
 }
+
+.plans-section {
+    width: 100%;
+    min-width: 320px;
+    padding: 64px 0;
+    text-align: center;
+    color: #757575;
+}
+
+.plans-section__description {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto 50px;
+    font-size: 1.4rem;
+}
+
+.plans-section__description h2 {
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+}
+
+.plans-section__description p {
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+.plans-section__cards-container {
+    height: 280px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 0 15%;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+}
+
+.plans-section__cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+.plan-card {
+    position: relative;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 10px;
+    padding: 0 16px;
+    background-color: var(--just-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.plan-card__recommended {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 50px);
+    width: auto;
+    height: auto;
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    color: var(--just-white);
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+}
+
+.plan-card__name {
+    padding-top: 30px;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.plan-card__price {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 16px;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 6.3rem;
+    font-family: "Inter", sans-serif;
+    color: #000;
+}
+
+.plan-card__price--inactive {
+    color: var(--gray);
+}
+
+.plan-card__price::before {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 8px;
+    left: -10px;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 500;
+    content: "$";
+}
+
+.plan-card__price-details {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+.plan-card__cta {
+    width: 150px;
+    height: 48px;
+    padding: 10px 0;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--warm-black);
+    background-color: var(--off-white);
+}
+
+.plan-card__cta::after {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    vertical-align: top;
+    content: url("./assets/icons/orange-right-arrow.svg");
+}
+
+.plan-card__cta--inactive {
+    border-color: var(--gray);
+    color: var(--gray);
+    background-color: var(--just-white);
+}
+
+.plan-card__cta--inactive::after {
+    content: url("./assets/icons/gray-right-arrow.svg");
+}
