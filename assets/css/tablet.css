@@ -1,0 +1,37 @@
+.exchange-section__tables-container {
+    justify-content: space-evenly;
+}
+
+.exchange-table {
+    width: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    margin: 0;
+}
+
+.exchange-table__table {
+    width: 90%;
+}
+
+.change-table {
+    display: none;
+}
+
+.product-details__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    min-width: 600px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.product-card {
+    margin: 8px;
+}
+
+.plans-section__cards-container {
+    padding: 0;
+    justify-content: center;
+}
